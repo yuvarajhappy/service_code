@@ -13,7 +13,7 @@ $count = mysqli_num_rows($query);
 $row=mysqli_fetch_assoc($query);
 if($count==1){
 	$result[]=$row;
-$json = array("status" => "Sucess", "message" => "Welcome to cambodia","Login Details" => $result);
+$json = array("status" => "Sucess", "message1" => "Welcome to cambodia","Login Details" => $result);
 header("HTTP/1.1 200 OK");
 }else {
 $json = array("status" => "Failed", "message" => "No Records Found");
