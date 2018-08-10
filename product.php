@@ -3,7 +3,7 @@ error_reporting(0);
 $conn = mysqli_connect("localhost","root","",'json');
 if(mysqli_connect_error())	
 {
-	echo "connect error";
+	echo "connect problem";
 }
 $sql = "select name,prize from products";
 $query=mysqli_query($conn , $sql);
